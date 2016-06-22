@@ -1,0 +1,76 @@
+
+
+// Mixin
+.a{
+  color: red;
+}
+.mixin-class {
+  .a();
+}
+// vsvs
+.mixin(@color; @padding: 2) {
+  color: @color;
+  padding: @padding;
+}
+
+.mixin-class2{
+	.mixin(#333, 10px);
+}
+
+
+// Operation
+
+.em-font-size(@px) {
+    font-size: (@px/16) + 0em;
+}
+.myclass {
+    .em-font-size(17);
+}
+
+@firstColor: #333; 
+@secondColor: @firstColor*3;
+.color1{
+	color:@firstColor;
+
+}
+color2{
+	color:@secondColor;
+}
+
+ // Extend
+ .extend{
+ 	position: absolute;
+ 	content: "";
+ 	display: block;
+  top: 0;
+  left: 0;
+ 	.test{
+ 		color:#000;
+ 		font-size:20px;
+ 	}
+ 	&:hover{
+ 		background: #333;
+ 	}
+ }
+ .icon1{
+
+	&:extend(.extend);
+ }
+
+ .icon2{
+	&:extend(.extend all); 
+ }
+ .icon3{
+	&:extend(.extend .test);
+ }
+
+  // color function 
+
+  @tester: #f8e71c;
+
+  .function{
+  	border: 3px solid darken(@tester, 20%);
+  	color:lighten(@tester, 20%);
+  	background: fade(@tester, 27%);
+  }
+

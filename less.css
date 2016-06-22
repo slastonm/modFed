@@ -1,0 +1,45 @@
+.a {
+  color: red;
+}
+.mixin-class {
+  color: red;
+}
+.mixin-class2 {
+  color: #333;
+  padding: 10px;
+}
+.myclass {
+  font-size: 1.0625em;
+}
+.color1 {
+  color: #333;
+}
+color2 {
+  color: #999999;
+}
+.extend,
+.icon1,
+.icon2 {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+}
+.extend .test,
+.icon2 .test,
+.icon3 {
+  color: #000;
+  font-size: 20px;
+}
+.extend:hover,
+.icon2:hover {
+  background: #333;
+}
+.function {
+  border: 3px solid #a99c05;
+  color: #fbf17f;
+  background: rgba(248, 231, 28, 0.27);
+}
+
+/*# sourceMappingURL=less.css.map */

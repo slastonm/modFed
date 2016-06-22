@@ -1,0 +1,11 @@
+.test {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-transition: background-color 0.5s, color 0.7s, opacity 0.5s;
+  -ms-transition: background-color 0.5s, color 0.7s, opacity 0.5s;
+  -o-transition: background-color 0.5s, color 0.7s, opacity 0.5s;
+  -moz-transition: background-color 0.5s, color 0.7s, opacity 0.5s;
+  transition: background-color 0.5s, color 0.7s, opacity 0.5s;
+}
+/*# sourceMappingURL=stylus.css.map */
